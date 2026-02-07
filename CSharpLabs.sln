@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLabs.Lab05", "CSharpL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLabs.Lab06", "CSharpLabs.Lab06\CSharpLabs.Lab06.csproj", "{D75BBF1D-B61B-4AE2-9240-BD4BF2F54FC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.App", "Company.App\Company.App.csproj", "{9696DB7D-06D7-4952-9BE6-F19AB920ACF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D75BBF1D-B61B-4AE2-9240-BD4BF2F54FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D75BBF1D-B61B-4AE2-9240-BD4BF2F54FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D75BBF1D-B61B-4AE2-9240-BD4BF2F54FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9696DB7D-06D7-4952-9BE6-F19AB920ACF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9696DB7D-06D7-4952-9BE6-F19AB920ACF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9696DB7D-06D7-4952-9BE6-F19AB920ACF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9696DB7D-06D7-4952-9BE6-F19AB920ACF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
