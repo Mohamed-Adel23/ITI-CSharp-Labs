@@ -7,6 +7,7 @@ namespace Company.App
         private int[] _years = { 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997 };
         private int[] _revenues = { 150, 170, 180, 175, 200, 250, 210, 240, 280, 14 };
         private Color _lineColor = Color.Blue;
+        Label companyLabel;
 
         public Form1()
         {
@@ -15,7 +16,7 @@ namespace Company.App
             this.Size = new Size(900, 600);
 
             // Company name
-            Label companyLabel = new Label
+            companyLabel = new Label
             {
                 Text = "ABC Company",
                 Font = new Font("Arial", 18, FontStyle.Bold),
@@ -41,6 +42,7 @@ namespace Company.App
             this.KeyPreview = true;
             this.KeyDown += Form_Key_Color_Event;
             this.MouseClick += Form_Mouse_Click;
+            InitializeMenu();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -171,5 +173,32 @@ namespace Company.App
                 }
             }
         }
+
+        private void InitializeMenu()
+        {
+            MenuStrip menuStrip = new MenuStrip();
+            ToolStripMenuItem formatMenu = new ToolStripMenuItem("Format");
+            ToolStripMenuItem companyNameItem = new ToolStripMenuItem("Company Name");
+
+            companyNameItem.Click += (s, e) =>
+            {
+                using (CompanyNameDialog dialog = new CompanyNameDialog(companyLabel))
+                {
+                    if (dialog.ShowDialog() == DialogResult.OK)
+                    {
+                        // Apply changes
+                        companyLabel.Font = dialog.SelectedFont;
+                        companyLabel.ForeColor = dialog.SelectedColor;
+                        companyLabel.Text = dialog.NewText;
+                    }
+                }
+            };
+
+            formatMenu.DropDownItems.Add(companyNameItem);
+            menuStrip.Items.Add(formatMenu);
+            this.MainMenuStrip = menuStrip;
+            this.Controls.Add(menuStrip);
+        }
+
     }
 }

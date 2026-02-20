@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLabs.Lab06", "CSharpL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.App", "Company.App\Company.App.csproj", "{9696DB7D-06D7-4952-9BE6-F19AB920ACF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileExplorer", "FileExplorer\FileExplorer.csproj", "{74BEF3E6-140C-4955-A737-787F95294FCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9696DB7D-06D7-4952-9BE6-F19AB920ACF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9696DB7D-06D7-4952-9BE6-F19AB920ACF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9696DB7D-06D7-4952-9BE6-F19AB920ACF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BEF3E6-140C-4955-A737-787F95294FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BEF3E6-140C-4955-A737-787F95294FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BEF3E6-140C-4955-A737-787F95294FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BEF3E6-140C-4955-A737-787F95294FCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
